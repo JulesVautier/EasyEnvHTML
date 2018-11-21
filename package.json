@@ -16,7 +16,8 @@
     "watch:css": "onchange \"development/scss\" -- npm run build:css",
     "watch:js": "onchange \"development/js\" -- npm run build:js",
     "watch:all": "npm-run-all -p serve watch:css watch:js",
-    "start": "npm run build:all && npm run watch:all"
+    "start": "npm run build:all && npm run watch:all",
+    "dev": "node app.js && onchange app.js -- node app.js"
   },
   "devDependencies": {
     "node-sass": "^4.5.0",
@@ -26,5 +27,8 @@
     "npm-run-all": "^4.0.2",
     "onchange": "^3.2.1",
     "uglify-js": "^2.8.3"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
