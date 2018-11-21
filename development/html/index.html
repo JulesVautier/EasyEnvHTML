@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>EasyEnvHTML</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body>
-Hello World
+<style>
+    html, body {
+        height: 100%;
+    }
+    .container-annonce {
+        height: 100%;
+    }
+    .container-action {
+        height: 50%;
+    }
+</style>
+<body style="max-height: 100%">
+<div class="container-fluid" style="background-color: black">
+    <div class="container-fluid" style="margin: 1px">
+        <div class="row">
+            <div class="col-sm-8" style="background-color: antiquewhite">
+                <div class="container-annonce">
+                    Hello World
+                </div>
+            </div>
+            <div class="col-sm-4" style="background-color: cornflowerblue">
+                <div class="container-action">
+                    <p>Postuler</p>
+                </div>
+                <div class="container-action">
+                    <p>S'inscrire</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
